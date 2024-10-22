@@ -9,9 +9,9 @@ import img7 from "./vector1.png"
 
 const Home = () => {
     return (
-        <div className="w-full object-cover h-screen">
+        <div className="lg:x-full xl:w-full object-cover xl:h-screen 2xl:h-screen">
             <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url('./img1.jpg')` }}>
-                <div className='navbar absolute flex flex-col gap-5 rounded-b-full items-center w-full h-[8vw] bg-white bg-opacity-80'>
+                <div className='navbar absolute flex flex-col gap-5 rounded-b-full items-center w-full 2xl:h-[8vw] lg:h-[10vw] bg-white bg-opacity-80'>
                     <div className="upper relative pt-[2vw] w-full px-[5vw] flex justify-center items-center">
                         <img className='w-[12vw] scale-[1.44]' src={img1} alt="" srcset="" />
                         <div className="icon absolute right-[6vw] flex justify-center items-center gap-[2vw]">
@@ -41,9 +41,9 @@ const Home = () => {
                         <a href="">Contact us</a>
                     </div>
                 </div>
-                <div className='detail mt-[12vw] font-montserrat uppercase  absolute top-[12vw] left-[5vw] w-[60vw] h-[20vw]'>
-                    <h1 className='text-4xl text-[#B16046] leading-[3vw] font-semibold '>The Ultimate Wedding Card Designer</h1>
-                    <h1 className='text-7xl text-white font-bold italic leading-[5vw]'>Create Your Dream </h1>
+                <div className='detail mt-[12vw] font-montserrat uppercase  absolute top-[12vw] left-[5vw] 2xl:w-[70vw] h-[20vw]'>
+                    <h1 className='text-4xl text-[#B16046] xl:leading-[3vw] font-semibold '>The Ultimate Wedding Card Designer</h1>
+                    <h1 className='text-7xl text-white font-bold italic xl:leading-[5vw]'>Create Your Dream </h1>
                     <h1 className='text-7xl text-white font-bold italic'>Wedding Card in Minutes.</h1>
                     <div className=''>
                         <div className='absolute flex gap-[3vw]'>
