@@ -34,8 +34,8 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="lower uppercase flex gap-[3vw] text-[#A15233] font-semibold text-base font-montserrat">
-                        <a href="">Home</a>
-                        <a href="">TEMpLATES</a>
+                        <a href="/">Home</a>
+                        <a href="/PDF-T">TEMpLATES</a>
                         <a href="">how it works</a>
                         <a href="">JOIN AS A VENDOR</a>
                         <a href="">Contact us</a>

@@ -11,7 +11,7 @@ const Template = () => {
                 <img src={Ellipse} alt="" srcset="" />
             </div>
             <div className='w-full h-[10vw] absolute top-[3vw] gap-[.5vw] flex flex-col justify-center items-center'>
-                <h1 className='font-raleway font-medium tracking-wider text-[#B16046] xl:text-sm xl:text-base'>GALLARY</h1>
+                <h1 className='font-raleway font-medium tracking-wider text-[#B16046] xl:text-base'>GALLARY</h1>
                 <h1 className='font-montserrat uppercase text-[#6D564E] xl:text-4xl 2xl:text-5xl'>Template Gallery Section</h1>
             </div>
             <div className="bg-[#F2E0CF99] w-[50vw] xl:h-[32vw] 2xl:h-[35vw] absolute top-[13vw] rounded-br-[20vw] flex justify-center items-start">
