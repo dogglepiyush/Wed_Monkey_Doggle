@@ -3,7 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Action1 from './components/Action1';
 import Detail from './components/Detail';
 import DetailPage from './components/DetailPage';
-import Homepage from './components/Homepage/Homepage';
+import Homepage from './components/Homepage';
 import BuisnessSignin from './components/LoginSignin/BuisnessSignin';
 import SignIn from './components/LoginSignin/SignIn';
 import SignInEmailPass from './components/LoginSignin/SignInEmailPass';
@@ -13,6 +13,9 @@ import VerifyForBuisness from './components/LoginSignin/VerifyForBuisness';
 import VerifyForEmailSignin from './components/LoginSignin/VerifyForEmailSignin';
 import PdfPage from './components/PdfPage';
 import TemplatePage from './components/TemplatePage';
+import VideoPage from './components/VideoPage';
+import VideoTemplatePage from './components/VideoTemplatePage';
+import VideoTemplateDetail from './components/VideoTemplateDetail';
 
 const App = () => {
   return (
@@ -27,12 +30,17 @@ const App = () => {
           <Route path="/BuisnessSignin" element={<BuisnessSignin />} /> 
           <Route path="/VerifyForBuisness" element={<VerifyForBuisness />} /> 
           <Route path="/VerifyForEmailSignin" element={<VerifyForEmailSignin />} /> 
-          <Route path="/PDF-T" element={<PdfPage />} />
-          <Route path="/TemplatePage" element={<TemplatePage />} />
-          <Route path='/Action1' element={<Action1 />} />
-          <Route path='/DetailPage' element={<DetailPage />} />
-          <Route path='/Details' element={<Detail />} />
+          <Route path="/pdfpage" element={<PdfPage />} />
+          <Route path="/templatepage" element={<TemplatePage />} />
+          <Route path='/action1' element={<Action1 />} />
+          <Route path='/pdfdetailpage' element={<DetailPage />} />
+          <Route path='/details' element={<Detail />} />
 
+
+          {"video Routes"}
+          <Route path='/videopage' element={<VideoPage />} />
+          <Route path="/videotemplatepage" element={<VideoTemplatePage />} />
+          <Route path='/videotemplatedetail' element={<VideoTemplateDetail />} />
 
         </Routes>
       </div>

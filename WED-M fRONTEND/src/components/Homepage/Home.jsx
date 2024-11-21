@@ -10,7 +10,7 @@ import img7 from "./vector1.png"
 const Home = () => {
     return (
         <div className="lg:x-full xl:w-full object-cover xl:h-screen 2xl:h-screen">
-            <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url('./img1.jpg')` }}>
+            <div className="relative w-[100%] h-screen bg-cover bg-top" style={{ backgroundImage: `url('./cop1.jpg')` }}>
                 <div className='navbar absolute flex flex-col gap-5 rounded-b-full items-center w-full 2xl:h-[8vw] lg:h-[10vw] bg-white bg-opacity-80'>
                     <div className="upper relative pt-[2vw] w-full px-[5vw] flex justify-center items-center">
                         <img className='w-[12vw] scale-[1.44]' src={img1} alt="" srcset="" />
@@ -35,7 +35,7 @@ const Home = () => {
                     </div>
                     <div className="lower uppercase flex gap-[3vw] text-[#A15233] font-semibold text-base font-montserrat">
                         <a href="/">Home</a>
-                        <a href="/PDF-T">TEMpLATES</a>
+                        <a href="/pdfpage">TEMpLATES</a>
                         <a href="">how it works</a>
                         <a href="">JOIN AS A VENDOR</a>
                         <a href="">Contact us</a>

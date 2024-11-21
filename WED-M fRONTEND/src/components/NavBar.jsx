@@ -36,7 +36,7 @@ const NavBar = () => {
                 </div>
                 <div className="lower uppercase flex gap-[3vw] text-[#A15233] font-semibold 2xl:text-sm xl:text-sm font-montserrat">
                     <a href="/">Home</a>
-                    <a href="/PDF-T">Templates</a>
+                    <a href="/pdfpage">Templates</a>
                     <a href="">How it works</a>
                     <a href="">Join as a Vendor</a>
                     <a href="">Contact us</a>

@@ -14,9 +14,9 @@ import img from "../assets/images/image 29.png"
 
 
 const Footer = () => {
-  return (
-    <div>
-        <div className="w-full h-screen flex justify-center items-center bg-[#FFFCF8]">
+    return (
+        <div>
+            <div className="w-full h-screen flex justify-center items-center bg-[#FFFCF8]">
                 <div className='w-[80%] bg-center relative flex justify-center items-center overflow-hidden h-[65%]'>
                     <img className='object-fill absolute top-5 bg-cover scale-[1.2]' src={bg2} alt="" srcset="" />
                     <div className="w-[90%] h-[80%] absolute flex flex-col justify-center items-center bg-white bg-opacity-90">
@@ -31,7 +31,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="INVITITIONS w-full h-screen bg-[#FFFCF8]">
+            <div className="INVITITIONS  w-full h-screen bg-[#FFFCF8]">
                 <div className="w-full h-[30vw] relative bg-[#EDE3D9]">
                     <div className="w-full h-[10vw] flex-col  top-[2vw] flex justify-center items-center absolute">
                         <h1 className="absolute uppercase font-montserrat text-[#9D7336] font-semibold top-[1.5vw] tracking-wider left-[24.4vw]">
@@ -97,39 +97,39 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        <div className="footer bg-[#B16046] mt-[5vw] w-full h-[20vw]">
-                        <div className="cont flex font-Cormorant justify-center gap-[3vw] uppercase text-white items-center w-full h-[10vw]">
-                            <button>HOME</button>
-                            <button>TEMPLATE</button>
-                            <button>
-                                <img className="scale-[.6]" src={logo} alt="" srcset="" />
-                            </button>
-                            <button>VENDORS</button>
-                            <button>CONTACT</button>
-                        </div>
-                        <div className="details w-full h-[8vw] flex flex-col text-center justify-center items-center ">
-                            <h1 className="font-montserrat text-[#E9DAB0] text-2xl">For the moments that matter, make them memorable."</h1>
-                            <h1 className="font-montserrat text-[#E9DAB0] ">Your wedding is a milestone filled with precious moments. Let us help you create invitations that <br /> capture the essence of your celebration and leave a lasting impression on your guests.</h1>
-                            <div className="buttons flex gap-[2vw] mt-[2vw]">
-                                <button>
-                                    <img src={f} alt="" srcset="" />
-                                </button>
-                                <button>
-                                    <img src={i} alt="" srcset="" />
-                                </button>
-                                <button>
-                                    <img src={t} alt="" srcset="" />
-                                </button> 
-                                <button>
-                                    <img src={y} alt="" srcset="" />
-                                </button>
+            <div className="footer bg-[#B16046] mt-[5vw] w-full h-[20vw]">
+                <div className="cont flex font-Cormorant justify-center gap-[3vw] uppercase text-white items-center w-full h-[10vw]">
+                    <button>HOME</button>
+                    <button>TEMPLATE</button>
+                    <button>
+                        <img className="scale-[.6]" src={logo} alt="" srcset="" />
+                    </button>
+                    <button>VENDORS</button>
+                    <button>CONTACT</button>
+                </div>
+                <div className="details w-full h-[8vw] flex flex-col text-center justify-center items-center ">
+                    <h1 className="font-montserrat text-[#E9DAB0] text-2xl">For the moments that matter, make them memorable."</h1>
+                    <h1 className="font-montserrat text-[#E9DAB0] ">Your wedding is a milestone filled with precious moments. Let us help you create invitations that <br /> capture the essence of your celebration and leave a lasting impression on your guests.</h1>
+                    <div className="buttons flex gap-[2vw] mt-[2vw]">
+                        <button>
+                            <img src={f} alt="" srcset="" />
+                        </button>
+                        <button>
+                            <img src={i} alt="" srcset="" />
+                        </button>
+                        <button>
+                            <img src={t} alt="" srcset="" />
+                        </button>
+                        <button>
+                            <img src={y} alt="" srcset="" />
+                        </button>
 
-                            </div>
-                            <h1 className="font-Cormorant mt-[1vw] text-[#E9DAB0]">Copyright 2024 All Rights Reserved</h1>
-                        </div>
                     </div>
-    </div>
-  )
+                    <h1 className="font-Cormorant mt-[1vw] text-[#E9DAB0]">Copyright 2024 All Rights Reserved</h1>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Footer
