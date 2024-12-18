@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from './Home'
-import About from './About'
-import Template from './Template'
-import Navsection from './Navsection'
+import About from './Homepage/About'
+import Home from './Homepage/Home'
+import Navsection from './Homepage/Navsection'
+import Template from './Homepage/Template'
 
 const Homepage = () => {
   return (

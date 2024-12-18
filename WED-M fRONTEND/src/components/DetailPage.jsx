@@ -6,40 +6,94 @@ import p2 from "../assets/images/p2.png";
 import p3 from "../assets/images/p3.png";
 import p4 from "../assets/images/p4.png";
 import Footer from './Footer';
-import dance from '../assets/images/Rectangle 600.png';
+import dance from '../assets/images/image 59.png';
+import dance1 from '../assets/images/Rectangle 600.png';
 
 const DetailPage = () => {
-    const [showPopup, setShowPopup] = useState(false); // State to handle popup
+    const [showPopup, setShowPopup] = useState(false); // State for the main popup
+    const [showConfirmationPopup, setShowConfirmationPopup] = useState(false); // State for the confirmation popup
 
     const togglePopup = () => {
-        setShowPopup(!showPopup);  // Toggle popup visibility
+        setShowPopup(!showPopup);
     };
 
+    const handleCancelClick = () => {
+        setShowConfirmationPopup(true); // Show confirmation popup on cancel
+    };
+
+    const confirmCancel = () => {
+        setShowPopup(false); // Close the main popup
+        setShowConfirmationPopup(false); // Close the confirmation popup
+    };
+
+    const closeConfirmationPopup = () => {
+        setShowConfirmationPopup(false); // Close only the confirmation popup
+    };
     return (
         <div className='bg-[#FFFCF8] font-montserrat'>
             {/* Full-Screen Popup */}
             {showPopup && (
                 <div className="fixed top-10 left-0 w-full h-full bg-transparent z-50 flex justify-center items-center">
                     <div className="w-[40vw] relative h-[30vw] bg-[#FFFCF8] p-8 rounded-3xl flex flex-col justify-center items-center drop-shadow-2xl">
-                        <img className='scale-[.8]' src={dance} alt="Dance" />
-                        <h1 className="text-2xl mb-6 text-center mt-8">Do you wanna choose from <br /> existing card or create a new one?</h1>
-                        <div className="flex w-[30vw] left-10 mt-[20vw] justify-center gap-[8vw] absolute">
+                        <div className="w-full h-full flex justify-center items-center ">
+                            <div className="left overflow-hidden flex justify-center items-center h-[90%] w-1/2">
+                                <img className='object-contain scale-[.9]' src={dance} alt="" />
+                            </div>
+                            <div className="right p-[3vw] h-[90%] w-1/2">
+                                <div className="flex justify-center items-center flex-col">
+                                    <h1 className='uppercase mt-[2vw] text-xl '>Checkout</h1>
+                                    <div className='flex mt-8 justify-between items-center w-full'>
+                                        <h1>COST PRICE</h1>
+                                        <h1>₹569</h1>
+                                    </div>
+                                    <div className='flex mt-4 justify-between items-center w-full'>
+                                        <h1>dISCOUNT (60%)</h1>
+                                        <h1>-₹300</h1>
+                                    </div>
+                                    <div className='flex mt-4 justify-between items-center w-full'>
+                                        <h1>GST (22%)</h1>
+                                        <h1>+₹ 80</h1>
+                                    </div>
+                                    <div className="border border-[#B16046] mt-4 w-full"></div>
+                                </div>
+                                <div className='flex mt-4 justify-between items-center w-full'>
+                                    <h1>Total </h1>
+                                    <h1>₹330</h1>
+                                </div>
+                                <div className='w-[3vw] mt-[2vw] relative h-[3vw] border-2 border-[#A15233] rounded-full flex justify-center items-center'>
+                                    <div className="w-[10px] h-[10px] rounded-full bg-[#A15233] border-2 border-[#A15233]"></div>
+                                    <div className='absolute w-[8vw] bg-[#FFFCF8] left-10'>
+                                        <button onClick={togglePopup} className='tracking-wider'>Proceed To Pay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=''>
+                            <button onClick={handleCancelClick} className='tracking-wider border-2 px-8 py-2 rounded-full border-[#A15233] absolute top-10 right-[3vw] text-[#A15233]'>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+            {showConfirmationPopup && (
+                <div className="fixed top-10 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+                    <div className="w-[40vw] relative h-[30vw] bg-[#FFFCF8] p-2 rounded-3xl flex flex-col justify-start items-center drop-shadow-2xl">
+                        <img className='scale-[.6] mt-[4vw]' src={dance1} alt="Dance" />
+                        <h1 className="text-2xl mb-6 text-center mt-">Are you sure you want to exit? </h1>
+                        <div className="flex w-[30vw] left-10 mt-[16.5vw] justify-center gap-[10vw] absolute">
                             <div className='w-[3vw] relative h-[3vw] border-2 border-[#A15233] rounded-full flex justify-center items-center'>
                                 <div className="w-[10px] h-[10px] rounded-full bg-[#A15233] border-2 border-[#A15233]"></div>
                                 <div className='absolute w-[18vw] bg-[#FFFCF8] left-10'>
-                                    <button onClick={togglePopup} className='tracking-wider'>Create new</button>
+                                    <button onClick={closeConfirmationPopup} className='tracking-wider'>Continue payment</button>
                                 </div>
                             </div>
                             <div className='w-[3vw] relative h-[3vw] border-2 border-[#A15233] rounded-full flex justify-center items-center'>
                                 <div className="w-[10px] h-[10px] rounded-full bg-[#A15233] border-2 border-[#A15233]"></div>
                                 <div className='absolute w-[8vw] bg-[#FFFCF8] left-10'>
-                                    <button onClick={togglePopup} className='tracking-wider'>Choose existing</button>
+                                    <button onClick={confirmCancel} className='tracking-wider'>Yes, exit now</button>
                                 </div>
                             </div>
                         </div>
-                        <div className=''>
-                            <button onClick={togglePopup} className='tracking-wider border-2 px-8 py-2 rounded-full border-[#A15233] absolute top-10 right-[3vw] text-[#A15233]'>Cancel</button>
-                        </div>
+                        
                     </div>
                 </div>
             )}
